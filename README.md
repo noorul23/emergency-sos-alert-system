@@ -85,6 +85,20 @@ Images of the hardware prototype are available in the repository.
 
 ---
 
-# 📜 License
+# 👥 Contributors
 
-MIT License
+This project was developed collaboratively.
+
+- **[Noorul Hassan](https://github.com/noorul23)**  
+- **[Muhammad Thahir](https://github.com/Thahir25)**  
+
+
+
+---
+
+## License
+This project is licensed under->[MIT License](https://github.com/noorul23/emergency-sos-alert-system/blob/main/LICENSE), please check it out before using this resource.
+
+---
+
+If you find this project useful, feel free to ⭐ the repository!
