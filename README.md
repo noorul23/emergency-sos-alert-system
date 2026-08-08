@@ -1,104 +1,172 @@
-# 🚨 Emergency SOS Alert System
+# Women Safety Alert Device
 
-Emergency SOS Alert System is a simple IoT-based safety device designed to send an emergency alert when a button is pressed.
+A portable emergency alert system developed using ESP32, GPS, and GSM communication modules to transmit location-based distress notifications during emergency situations.
 
-The project demonstrates two different implementations of the same concept:
+## Overview
 
-• GSM + GPS based emergency alert system  
-• Blynk IoT mobile alert system
+The Women Safety Alert Device is an IoT-based safety system designed to provide a simple mechanism for initiating an emergency alert and communicating the user's location to predefined contacts.
 
----
+The project was implemented through two approaches during development:
 
-# 🎯 Objective
+1. GSM and GPS based emergency alert implementation
+2. Blynk-based IoT alert implementation for demonstration
 
-The goal of this project is to design a simple emergency alert device that allows a user to quickly notify trusted contacts during dangerous situations.
-
-Potential use cases include:
-
-• Personal safety
-• Women safety systems
-• Emergency assistance devices
-• Elderly monitoring
+The primary concept of the project is location-based emergency notification through an embedded hardware device.
 
 ---
 
-# ⚙️ Version 1 — GSM + GPS Alert System
+## Objective
 
-This version uses hardware communication modules to send alerts.
+The objective was to develop a portable emergency alert device capable of transmitting a distress notification with location information when the emergency trigger is activated.
 
-### Components
-
-• ESP32 / Arduino  
-• SIM module  
-• GPS module  
-• Push button  
-
-### Working
-
-1. User presses emergency button
-2. GPS retrieves location
-3. SIM module sends SMS with location coordinates
-4. Emergency contact receives alert message
-
-⚠️ During demonstration, the SIM and GPS modules faced connectivity issues, so this version remained as a prototype implementation.
+The concept can be applied to emergency assistance and personal safety scenarios.
 
 ---
 
-# 📱 Version 2 — Blynk IoT Alert System
+## System Concept
 
-To ensure reliable demonstration, the system was reimplemented using Blynk IoT.
+The basic emergency workflow consists of:
 
-### Components
-
-• ESP32 / Arduino  
-• Push button  
-• Blynk mobile application  
-
-### Working
-
-1. User presses emergency button
-2. ESP32 sends signal to Blynk cloud
-3. Mobile application receives alert notification
-
-This version provided a stable and functional demonstration of the emergency alert concept.
+1. Emergency button activation
+2. Controller detection of the emergency input
+3. Location acquisition through GPS
+4. Preparation of the location-based alert
+5. Transmission of the emergency notification through the communication system
 
 ---
 
-# 📂 Repository Structure
+## Implementation 1 — GPS + GSM
 
-```
-version1_gsm_gps
-   firmware
-   images
+The first implementation used dedicated GPS and GSM communication modules.
 
-version2_blynk
-   firmware
-   images
-   docs
-```
+### Main Components
+
+- ESP32 / Arduino
+- GPS module
+- GSM / SIM module
+- Push button
+
+### Working Principle
+
+When the emergency button is pressed, the controller initiates the emergency sequence.
+
+The GPS module is used to obtain the location coordinates, which are then transmitted through the GSM module as an emergency notification.
+
+### Prototype Status
+
+The GPS and GSM implementation was developed as a hardware prototype.
+
+During the demonstration, connectivity issues were encountered with the GPS and GSM modules. Therefore, the implementation was not demonstrated as a reliable end-to-end system during that presentation.
 
 ---
 
-# 🔧 Hardware Prototype
+## Implementation 2 — Blynk IoT
 
-Images of the hardware prototype are available in the repository.
+A second implementation was developed using the Blynk IoT platform to demonstrate the emergency alert workflow independently of the GPS and GSM connectivity issues encountered in the first implementation.
+
+### Main Components
+
+- ESP32 / Arduino
+- Push button
+- Blynk IoT
+- Blynk mobile application
+
+### Working Principle
+
+1. The emergency button is pressed.
+2. The ESP32 detects the emergency input.
+3. The alert event is transmitted through Blynk IoT.
+4. The mobile application receives the emergency alert.
+
+This implementation was used as an alternative demonstration of the emergency alert concept.
 
 ---
 
-# 👥 Contributors
+## Hardware Prototype
 
-This project was developed collaboratively.
+The project was implemented using a physical embedded hardware prototype.
 
-- **[Noorul Hassan](https://github.com/noorul23)**  
-- **[Muhammad Thahir](https://github.com/Thahir25)**  
+Project images and implementation materials are included in the repository.
 
+---
 
+## Technologies Used
+
+### Hardware
+
+- ESP32
+- GPS module
+- GSM / SIM module
+- Push button
+
+### Software
+
+- Embedded firmware
+- Arduino IDE
+- Blynk IoT
+- Blynk mobile application
+
+---
+
+## Project Materials
+
+The repository contains materials from the different implementation stages of the project, including:
+
+- Firmware source code
+- Hardware prototype images
+- Implementation images
+- Project documentation
+- Presentation materials
+- Project report
+
+---
+
+## Project Contribution
+
+**Noorul Hassan**
+
+- Embedded system development
+- Hardware prototyping
+- ESP32-based implementation
+- GPS and GSM integration
+- Emergency alert workflow development
+
+**Muhammad Thahir**
+
+- Collaborative project development
+- Blynk-based implementation
+
+---
+
+## Limitations
+
+- GPS and GSM connectivity can affect the reliability of the hardware implementation.
+- The project was developed as an academic prototype.
+- The system was not evaluated as a production-ready safety device.
+
+---
+
+## Future Improvements
+
+Potential improvements include:
+
+- Improved GPS and GSM connectivity
+- Compact hardware enclosure
+- Battery-powered portable implementation
+- Improved emergency communication reliability
+- Additional emergency contacts
+- Mobile application integration
+- Real-time location tracking
 
 ---
 
 ## License
-This project is licensed under->[MIT License](https://github.com/noorul23/emergency-sos-alert-system/blob/main/LICENSE), please check it out before using this resource.
+
+This project is licensed under the MIT License.
 
 ---
 
-If you find this project useful, feel free to ⭐ the repository!
+## Contributors
+
+- [Noorul Hassan](https://github.com/noorul23)
+- [Muhammad Thahir](https://github.com/Thahir25)
