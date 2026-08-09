@@ -41,7 +41,7 @@ The first implementation used dedicated GPS and GSM communication modules.
 
 ### Main Components
 
-- ESP32 / Arduino
+- ESP32
 - GPS module
 - GSM / SIM module
 - Push button
@@ -66,7 +66,7 @@ A second implementation was developed using the Blynk IoT platform to demonstrat
 
 ### Main Components
 
-- ESP32 / Arduino
+- ESP32
 - Push button
 - Blynk IoT
 - Blynk mobile application
